@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгения Гоцкина](https://up.htmlacademy.ru/htmlcss/32/user/1335597).
-* Наставник: `Максим Корелин`.
+* Наставник: `Максим Корелин`(https://htmlacademy.ru/profile/maxzbest).
 
 ---
 
