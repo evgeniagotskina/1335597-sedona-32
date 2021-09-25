@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-list" href="#">Главная</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-list" href="#">О Седоне</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-list" href="#">Гостиницы</a>
+                </li>
+            </ul>
+
+            <a class="page-logo"></a>
+
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                    <a class="avigation-list" href="#">
+                        <span class="visually-hidden">Поиск по сайт</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-list" href="#">
+                        <span class="visually-hidden">Избраное</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-list" href="#">Хочу сюда</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="page-main">
+        <h1 class="visually-hidden">О Седоне</h1>
+        <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <section class="reason">
+            <h2 class="reason-title">Настоящий городок
+            </h2>
+            <span class="reason-number">— №1 —</span>
+            <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </section>
+        <section class="recommendations">
+            <h2 class="visually-hidden">Рекомендации для гостей</h2>
+            <ul class="recommendations-list">
+                <li class="recommendations-item">
+                    <h3 class="recommendations-title">жилье</h3>
+                    <p class="recommendations-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li class="recommendations-item">
+                    <h3 class="recommendations-title">еда</h3>
+                    <p class="recommendations-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="recommendations-item">
+                    <h3 class="recommendations-title">сувениры</h3>
+                    <p class="recommendations-description">Не только китайского, но и настоящего местного производства!</p>
+                </li>
+            </ul>
+        </section>
+        <section class="reason">
+            <h2 class="reason-title">Там есть мост дьявола
+            </h2>
+            <span class="reason-number">— №2 —</span>
+            <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </section>
+        <section class="reasons">
+            <div class="reason">
+                <h2 class="reason-title">Небольшая площадь
+                </h2>
+                <span class="reason-number">— №3 —</span>
+                <p class="reason-description">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="reason">
+                <h2 class="reason-title">Красивая дорога
+                </h2>
+                <span class="reason-number">— №4 —</span>
+                <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="reason">
+                <h2 class="reason-title">Мало туристов
+                </h2>
+                <span class="reason-number">— №5 —</span>
+                <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+        </section>
+        <section class="search">
+            <h2 class="search-title">Заинтересовались?</h2>
+            <p class="search-explain">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <button class="button button-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <section class="mailing">
+            <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+            <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="mailing-form" method="POST" action="#">
+                <label class="visually-hidden">ваша почта
+              <input type="text" name="email" placeholder="Ваш email">
+            </label>
+                <input type="submit" name="submit" value="подписаться">
+            </form>
+        </section>
+        <section class="contacts">
+            <h2 class="visually-hidden">Связаться с нами</h2>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a class="contacts-link" href="#">
+                        <span class="contacts-title">твитер</span>
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contacts-link" href="#">
+                        <span class="contacts-title">фейсбук</span>
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contacts-link" href="#">
+                        <span class="contacts-title">ютуб</span>
+                    </a>
+                </li>
+            </ul>
+            <address class="contacts-info">
+              <a class="contacts-phone" href="tel:"78128121212">+7 (812) 812-12-12</a>
+            </address>
+            <a class="contacts-copyright" href="#"></a>
+
+        </section>
+
+    </footer>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
-  </body>
+</body>
+
 </html>
