@@ -35,6 +35,8 @@ body {
 }
 
 .button {
+    font-family: PT Sans;
+    font-style: normal;
     color: #FFFFFF;
     text-transform: uppercase;
 }
@@ -266,4 +268,160 @@ body {
     text-decoration: none;
     color: black;
     font-style: normal;
+}
+
+
+/* Catalog */
+
+
+/* Main-catalog */
+
+.container-backgraund {
+    background-image: url(/img/catalog/catalog-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 408px;
+}
+
+.inner-header-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+
+/* Form */
+
+.catalog-filter {
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.parametr-label {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.catalog-filter-list {
+    list-style: none;
+}
+
+.button-apply {
+    background: #83B3D3;
+}
+
+
+/* Sorting */
+
+.filter-output {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.sorting-type option {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+
+/* Hotel-Card */
+
+.hotel-card-list {
+    list-style: none;
+}
+
+.hotel-card-link {
+    text-decoration: none;
+}
+
+.hotel-card-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000;
+}
+
+.hotel-card-type,
+.hotel-card-price {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.button-card {
+    background-color: #756257;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-favourites {
+    background-color: #83B3D3;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.hotel-card-rating {
+    font-size: 16px;
+}
+
+.button-more {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #83B3D3;
+}
+
+
+/* Pagination */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-link {
+    text-decoration: none;
+}
+
+.pagination-item a {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+
+.sorting-number {
+    font-size: 16px;
 }
