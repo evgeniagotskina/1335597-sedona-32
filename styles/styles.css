@@ -14,12 +14,27 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1200px;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .visually-hidden {
@@ -41,6 +56,11 @@ body {
     text-transform: uppercase;
 }
 
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* Header */
 
@@ -53,10 +73,24 @@ body {
 
 /* Navigation */
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .navigation-list {
+    width: 520px;
     color: inherit;
     text-decoration: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 520px;
 }
 
 .navigation-item {
@@ -130,11 +164,13 @@ body {
 }
 
 .reason {
+    display: flex;
     color: #FFFFFF;
     text-align: center;
 }
 
 .reason-text {
+    width: 400px;
     background-color: #83B3D3;
 }
 
@@ -155,8 +191,15 @@ body {
 /* Recommendation */
 
 .recommendations-list {
+    display: flex;
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.recommendations-item {
+    width: 400px;
 }
 
 .recommendations-item:nth-child(1) {
@@ -185,8 +228,15 @@ body {
 /* Reasons */
 
 .reasons-list {
+    display: flex;
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.reasons-item {
+    width: 400px;
 }
 
 .background-light {
@@ -226,6 +276,12 @@ body {
 
 
 /* Footer */
+
+.contacts {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .mailing {
     width: 1200px;
