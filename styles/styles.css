@@ -658,7 +658,55 @@
     .catalog-filter-wrapper {
         display: flex;
     }
-    
+    .catalog-filter-label{
+        display: flex;
+        align-items: center;
+        border:2px solid #fff;
+        border-radius: 4px 0 0 4px;
+        padding-right: 14px;
+        color: rgba(255,255,255,0.3);
+    }
+    .catalog-filter-label:nth-child(2){
+        border-radius: 0 4px 4px 0;
+        margin-left: -2px;
+    }
+    .catalog-filter-input {
+        width: 100px;
+        padding: 12px 18px;
+        font: inherit;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        appearance: textfield;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color:#fff;
+        cursor: pointer;
+    }
+    .catalog-filter-input:focus
+    .catalog-filter-input:active{
+        border: none;
+        outline: none;
+    }  
+    .catalog-filter-input::-webkit-outer-spin-button,
+    .catalog-filter-input::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+    }
+    .catalog-filter-label:hover {
+        border: 2px solid rgba(255,255,255,0.6);
+    }
+
+    .catalog-filter-input:focus{
+        outline: none;       
+    }
+    .catalog-filter-label:focus{
+        outline: 3px solid#81B3D2;
+    }
+    .catalog-filter-label:active{
+        background-color: #756257;
+    }
     .button-wrapper {
         display: flex;
         flex-direction: column;
@@ -695,6 +743,44 @@
         border: none;
         width: 290px;
         margin-left: auto;
+    }
+    .range-scale{
+        position:relative;
+        height: 4px;
+        background-color: rgba(255,255,255,0.3);
+        margin-top: 32px;
+    }
+    .range-bar{
+        position:absolute;
+        height: 4px;
+        background-color: #fff;
+    }
+    .range-toggle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;  
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    .range-toggle:hover{
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    .range-toggle:focus{
+        outline: 3px solid #83B3D3;
+    }
+    .range-toggle:active{
+        outline: 2px solid #83B3D3;
+    }
+    .toggle-min {
+        top: -8px;
+        left: -10px;
+    }
+      
+      .toggle-max {
+        top: -8px;
+        right: -10px;
     }
     /* Sorting */
     
