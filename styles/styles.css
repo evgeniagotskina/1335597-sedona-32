@@ -120,6 +120,7 @@
         border: 3px solid rgba(248, 248, 248, 0);
     }
     .navigation-user {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         max-width: 520px;
@@ -158,7 +159,22 @@
     .navigation-user-item:active{
         outline: none;
     }
-    
+    .navigation-user-counter::after{
+        position: absolute;
+        content: "12";
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 16px;
+        color:#fff;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background-color: #7DB54F;
+        text-align: center;
+        top:17px;
+        left:83px;
+
+    }
     .page-logo {
         display: block;
         width: 138px;
@@ -530,10 +546,7 @@
         color: #756257;
         opacity: 0.3;
     }
-    .contacts-copyright {
-      
-    }
-    
+        
     .contacts-copyright-svg {
         display: block;
         margin-left: auto;
@@ -624,17 +637,63 @@
         font-size: 20px;
         line-height: 26px;
     }
-    
+    .parameter{
+        position: relative;
+    }
     .parametr-label {
         font-weight: normal;
         font-size: 18px;
         line-height: 23px;
+        padding-left: 40px;
     }
-    
+    .parameter-checkmark{
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .parameter-input[type="radio"] + .parameter-checkmark{
+        border-radius: 50%;
+    }
+    .parameter:hover .parameter-checkmark{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .parameter-input:focus + .parameter-checkmark{
+        background-color: rgba(255, 255, 255, 0.6);
+        outline: 3px solid #83B3D3;
+    }
+    .parameter:active .parameter-checkmark{
+        outline:none;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .parameter-input[type="checkbox"]:checked + .parameter-checkmark::before{
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 10px;
+        background-image: url(/img/catalog/tick.svg);
+        background-repeat: no-repeat;
+        left: 4px;
+        top: 6px;
+    }
+    .parameter-input[type="radio"]:checked + .parameter-checkmark::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #3F5E72;
+        top:5px;
+        left:5px;
+    }
     .catalog-filter-list {
         list-style: none;
+        padding: 0;
     }
-    
+    .catalog-filter-item{
+        margin-bottom: 13px;
+    }
     .button-apply {
         background: #83B3D3;
         padding: 15px 42px;
@@ -695,17 +754,20 @@
         margin: 0;
     }
     .catalog-filter-label:hover {
-        border: 2px solid rgba(255,255,255,0.6);
+        border: 2px solid rgba(255,255,255,0.6);        
     }
 
     .catalog-filter-input:focus{
         outline: none;       
     }
-    .catalog-filter-label:focus{
-        outline: 3px solid#81B3D2;
+    .catalog-filter-input:focus > .catalog-filter-label{
+        outline: 3px solid #81b3d2;
+        position: relative;
+        box-shadow: inset 0px 0px 0px 3px #81b3d2;
     }
     .catalog-filter-label:active{
         background-color: #756257;
+        border:2px solid #fff;
     }
     .button-wrapper {
         display: flex;
@@ -972,7 +1034,12 @@
     
     .hotel-card-estimation {
         margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
+    
     
     .hotel-card-type,
     .hotel-card-price {
@@ -1025,6 +1092,12 @@
     }
     .hotel-card-rating {
         font-size: 16px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        width: 160px;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        text-align: center;
     }
     
     .stars {

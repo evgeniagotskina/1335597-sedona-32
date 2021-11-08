@@ -34,7 +34,7 @@
 
                     <span class="visually-hidden">Поиск по сайту</span>
                 </a>
-                <a class="navigation-user-item" href="#">
+                <a class="navigation-user-item navigation-user-counter" href="#">
                     <svg class="navigation-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
@@ -77,21 +77,21 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="checkbox" name="pool">
+                                    <input class="visually-hidden parameter-input" type="checkbox" name="pool" checked>
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">Бассейн</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="checkbox" name="parking">
+                                    <input class="visually-hidden parameter-input" type="checkbox" name="parking" checked>
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">Парковка</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="checkbox" name="wi-fi">
+                                    <input class="visually-hidden parameter-input" type="checkbox" name="wi-fi">
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">wi-fi</span>
                                 </label>
@@ -103,15 +103,15 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="radio" name="hotel-type"
-                                        value="hotel">
+                                    <input class="visually-hidden parameter-input" type="radio" name="hotel-type"
+                                        value="hotel" checked>
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">Гостиница</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="radio" name="hotel-type"
+                                    <input class="visually-hidden parameter-input" type="radio" name="hotel-type"
                                         value="motel">
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">Мотель</span>
@@ -119,7 +119,7 @@
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="parameter">
-                                    <input class="visually-hidden parameret-input" type="radio" name="hotel-type"
+                                    <input class="visually-hidden parameter-input" type="radio" name="hotel-type"
                                         value="appartaments">
                                     <span class="parameter-checkmark"></span>
                                     <span class="parametr-label">Аппартаменты</span>
@@ -130,10 +130,10 @@
                     <fieldset class="catalog-filter-price">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <div class="catalog-filter-wrapper">
-                            <label class="catalog-filter-label">
+                            <label class="catalog-filter-label" tabindex="-1">
                                 <input class="catalog-filter-input" type="text" name="min-price" value="0">от
                             </label>
-                            <label class="catalog-filter-label">
+                            <label class="catalog-filter-label" tabindex="-2">
                                 <input class="catalog-filter-input" type="text" name="max-price" value="9000">до
                             </label>
                         </div>
