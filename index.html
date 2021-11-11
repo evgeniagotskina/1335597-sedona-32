@@ -11,8 +11,8 @@
     <header class="page-header">
         <nav class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Главная</a>
+                <li class="navigation-item ">
+                    <a class="navigation-link navigation-active" href="#">Главная</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">О Седоне</a>
@@ -57,6 +57,7 @@
                                         <span class="popover-favorits-type">Мотель</span>
                                     </div>
                                 </a>
+                                <button type="button" class="button-delete">
                                 <svg class="img-delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.2">
@@ -74,6 +75,7 @@
                                             fill="black" />
                                     </g>
                                 </svg>
+                                </button>
                             </li>
                             <li class="popover-favorits-item">
                                 <a class="popover-favorits-link" href="">
@@ -84,6 +86,7 @@
                                         <span class="popover-favorits-type">Апартаменты</span>
                                     </div>
                                 </a>
+                                <button type="button" class="button-delete">
                                 <svg class="img-delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.2">
@@ -101,6 +104,7 @@
                                             fill="black" />
                                     </g>
                                 </svg>
+                                </button>
                             </li>
                         </ul>
                         <button class="button button-favourites-all button-brown">все избраные</button>
@@ -255,7 +259,7 @@
         </section>
 
     </footer>
-    <div class="modal-container">
+    <div class="modal-container modal-hidden">
         <div class="modal modal-hotel-search">
             <button class="modal-close-button">
                 <span class="visually-hidden">Закрыть</span>
@@ -273,7 +277,7 @@
                         <input type="text" id="field-date-departure" class="field-date" placeholder="1 сентября 2021">
                     </p>
                     <span class="field-date-description field-date-description-good">На эти даты есть свободные номера. Пока есть.</span>
-                    <p class="field-form-guest">
+                    <div class="field-form-guest">
                         <div class="guest-adults">
                             <label class="guest-adults-label" for="guest-number-adults">Взрослые:</label>
                             <div class="quantity-block">
@@ -282,7 +286,7 @@
                                         <path d="M3 9V11H17V9H3Z" fill="black"/>
                                         </svg>
                                 </button>
-                                <input class="quantity-num" type="number" id="guest-number-adults" value="2" >
+                                <input class="quantity-number" type="number" id="guest-number-adults" value="2" >
                                 <button class="quantity-arrow-plus">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 8.5H11V2.5H9V8.5H3V10.5H9V16.5H11V10.5H17V8.5Z" fill="black"/>
@@ -292,13 +296,15 @@
                         </div>
                         <div class="guest-child">
                             <label class="guest-child-label" for="guest-number-child">Дети:</label>
+                            <button class="button-information"></button>
+                            <div class="button-information-image"></div>
                             <div class="quantity-block">
                                 <button class="quantity-arrow-minus">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 9V11H17V9H3Z" fill="black"/>
                                         </svg> 
                                 </button>
-                                <input class="quantity-num" type="number" id="guest-number-adults" value="1" >
+                                <input class="quantity-number" type="number" id="guest-number-adults" value="1" >
                                 <button class="quantity-arrow-plus">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 8.5H11V2.5H9V8.5H3V10.5H9V16.5H11V10.5H17V8.5Z" fill="black"/>
@@ -306,7 +312,7 @@
                                 </button>
                               </div>
                         </div>
-                    </p>
+                    </div>
                     <button class="button button-blue button-field">Найти</button>
                 </form>
               </section>
