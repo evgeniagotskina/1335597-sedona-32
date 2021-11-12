@@ -18,11 +18,11 @@
                     <a class="navigation-link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Гостиницы</a>
+                    <a class="navigation-link" href="/catalog.html">Гостиницы</a>
                 </li>
             </ul>
 
-            <a class="page-logo"><img src="img/sedona-logo.svg" width="138px" height="70" alt="логотип сайта"> </a>
+            <a class="page-logo"><img src="img/sedona-logo.svg" width="138" height="70" alt="логотип сайта"> </a>
 
             <section class=" navigation-user">
                 <a class="navigation-user-item" href="#">
@@ -45,13 +45,12 @@
                         <span class="visually-hidden">Избраное</span>
 
                     </a>
-                    <div class="popover popover-favorits popover-open">
+                    <div class="popover popover-favorits">
                         <h2 class="visually-hidden">Список избраных отелей</h2>
                         <ul class="popover-favorits-list">
                             <li class="popover-favorits-item">
                                 <a class="popover-favorits-link" href="">
-                                    <img class="popover-favorits-img" src="img/catalog/hotel-desert.jpg" width="48px"
-                                        height="48px">
+                                    <img class="popover-favorits-img" src="img/catalog/hotel-desert.jpg" width="48" height="48" alt="фото гостиницы">
                                     <div class="popover-favorits-description">
                                         <h3 class="popover-favorits-title">Desert Quail Inn</h3>
                                         <span class="popover-favorits-type">Мотель</span>
@@ -79,8 +78,7 @@
                             </li>
                             <li class="popover-favorits-item">
                                 <a class="popover-favorits-link" href="">
-                                    <img class="popover-favorits-img" src="img/catalog/hotel-villas.jpg" width="48px"
-                                        height="48px">
+                                    <img class="popover-favorits-img" src="img/catalog/hotel-villas.jpg" width="48" height="48" alt="фото-гостиницы">
                                     <div class="popover-favorits-description">
                                         <h3 class="popover-favorits-title">Villas at Poco Diablo</h3>
                                         <span class="popover-favorits-type">Апартаменты</span>
@@ -107,7 +105,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="button button-favourites-all button-brown">все избраные</button>
+                        <button class="button button-favorites-all button-brown">все избраные</button>
 
                     </div>
                 </div>
@@ -122,7 +120,7 @@
             <div class="index-background">
             </div>
             <p class="slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
-            <p class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <p class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
             <section class="reason">
                 <div class="reason-text">
                     <h2 class="reason-title">Настоящий<br>городок
@@ -131,7 +129,7 @@
                     <p class="reason-description">Седона — не аттракцион<br>для туристов, там течёт<br>своя жизнь</p>
                 </div>
                 <div class="reason-image">
-                    <img src="img/photo-1.jpg" width="800px" height="384px" alt="улица седоны">
+                    <img src="img/photo-1.jpg" width="800" height="384" alt="улица седоны">
                 </div>
             </section>
             <section class="recommendations">
@@ -158,14 +156,14 @@
                 </ul>
             </section>
             <section class="reason">
+                <div class="reason-image">
+                    <img src="img/photo-2.jpg" width="800" height="384" alt="улица седоны">
+                </div>
                 <div class="reason-text">
                     <h2 class="reason-title">Там есть<br>мост дьявола
                     </h2>
                     <span class="reason-number">— №2 —</span>
                     <p class="reason-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
-                </div>
-                <div class="reason-image">
-                    <img src="img/photo-2.jpg" width="800px" height="384px" alt="улица седоны">
                 </div>
             </section>
             <section class="reasons">
@@ -192,9 +190,7 @@
             </section>
             <section class="search">
                 <h2 class="search-title">Заинтересовались?</h2>
-                <p class="search-explain">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-                    гостиниц в Седоне
-                </p>
+                <p class="search-explain">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <button class="button button-search button-brown" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
             </section>
         </div>
@@ -203,9 +199,9 @@
         <section class="mailing">
             <h2 class="mailing-title">Подпишитесь на рассылку</h2>
             <p class="mailing-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-            <form class="mailing-form" method="POST" action="#">
+            <form class="mailing-form" method="POST" action="https://echo.htmlacademy.ru/">
                 <label class="visually-hidden" for="mailing-input">ваша почта</label>
-                <input class="mailing-input" type="text" name="email" id="mailing-input" placeholder="Ваш email">
+                <input class="mailing-input" type="text" name="email" id="mailing-input" placeholder="Ваш email" required>
                 <button class="button button-mailing button-blue" type="submit">Подписаться</button>
             </form>
         </section>
@@ -246,7 +242,7 @@
                 <a class="contacts-phone " href="tel:78128121212">+7 (812) 812-12-12</a>
 
             </address>
-            <a class="contacts-copyright" href="#">
+            <a class="contacts-copyright" href="http://htmlacademy.ru">
 
                 <svg class="contacts-copyright-svg" width="115" height="33" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -269,25 +265,25 @@
                 <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
                     <p class="field-form">
                         <label class="field-label" for="field-date-coming">Дата заезда:</label>
-                        <input type="text" id="field-date-coming" class="field-date" placeholder="27 апреля 2020">
+                        <input type="text" id="field-date-coming" class="field-date" placeholder="27 апреля 2020" required>
                     </p>
                     <span class="field-date-description field-date-description-error">Мы не можем отправить вас в прошлое.</span>
                     <p class="field-form">
                         <label class="field-label" for="field-date-departure">Дата выезда:</label>
-                        <input type="text" id="field-date-departure" class="field-date" placeholder="1 сентября 2021">
+                        <input type="text" id="field-date-departure" class="field-date" placeholder="1 сентября 2021" required>
                     </p>
                     <span class="field-date-description field-date-description-good">На эти даты есть свободные номера. Пока есть.</span>
                     <div class="field-form-guest">
                         <div class="guest-adults">
                             <label class="guest-adults-label" for="guest-number-adults">Взрослые:</label>
                             <div class="quantity-block">
-                                <button class="quantity-arrow-minus">
+                                <button class="quantity-arrow-minus" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 9V11H17V9H3Z" fill="black"/>
                                         </svg>
                                 </button>
                                 <input class="quantity-number" type="number" id="guest-number-adults" value="2" >
-                                <button class="quantity-arrow-plus">
+                                <button class="quantity-arrow-plus" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 8.5H11V2.5H9V8.5H3V10.5H9V16.5H11V10.5H17V8.5Z" fill="black"/>
                                         </svg>
@@ -296,16 +292,16 @@
                         </div>
                         <div class="guest-child">
                             <label class="guest-child-label" for="guest-number-child">Дети:</label>
-                            <button class="button-information"></button>
+                            <button class="button-information" type="button"></button>
                             <div class="button-information-image"></div>
                             <div class="quantity-block">
-                                <button class="quantity-arrow-minus">
+                                <button class="quantity-arrow-minus" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 9V11H17V9H3Z" fill="black"/>
                                         </svg> 
                                 </button>
-                                <input class="quantity-number" type="number" id="guest-number-adults" value="1" >
-                                <button class="quantity-arrow-plus">
+                                <input class="quantity-number" type="number" id="guest-number-child" value="1" >
+                                <button class="quantity-arrow-plus" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 8.5H11V2.5H9V8.5H3V10.5H9V16.5H11V10.5H17V8.5Z" fill="black"/>
                                         </svg>
@@ -313,7 +309,7 @@
                               </div>
                         </div>
                     </div>
-                    <button class="button button-blue button-field">Найти</button>
+                    <button class="button button-blue button-field" type="submit">Найти</button>
                 </form>
               </section>
         </div>
