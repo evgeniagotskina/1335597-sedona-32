@@ -280,6 +280,8 @@
         flex-wrap: wrap;
         padding: 10px;
         cursor: pointer;
+        text-decoration: none;
+        color: #000000;
     }
     .popover-favorits-link:hover{
         opacity: 0.6;
@@ -409,6 +411,9 @@
     .reason-text {
         width: 400px;
         background-color: #83b3d3;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
     }
     
     .reason-title {
@@ -454,6 +459,9 @@
     
     .recommendations-item {
         width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
     
     .recommendations-item:nth-child(1) {
@@ -506,6 +514,9 @@
     
     .reasons-item {
         width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
     
     .background-light {
@@ -760,8 +771,9 @@
     .container-backgraund {
         background-image: url('../img/catalog/catalog-background.jpg');
         background-repeat: no-repeat;
-        width: 1200px;
-        height: 408px;
+        width: 1200px;        
+        background-color: #3d566d;
+        background-size: cover;
     }
     
     .inner-header-title {
@@ -825,6 +837,7 @@
         color: #FFFFFF;
         margin-left: 72px;
         margin-right: 72px;
+        padding-bottom: 70px;
     }
     
     .catalog-filter-title {
@@ -1311,7 +1324,9 @@
         background-repeat: repeat-x;
         height: 17px;
     }
-    
+    .stars-five{
+        width: 125px;
+    }
     .stars-four {
         width: 100px;
     }
@@ -1323,7 +1338,9 @@
     .stars-two {
         width: 50px;
     }
-    
+    .stars-one{
+        width: 25px;
+    }
     .button-more {
         font-weight: bold;
         font-size: 20px;
@@ -1503,7 +1520,7 @@
         font-weight: bold;
         font-size: 18px;
         line-height: 40px;
-        padding-left:19px; 
+        padding-left: 19px; 
         padding-right: 17px; 
         width: 420px;
         box-sizing: border-box;
@@ -1530,7 +1547,7 @@
         background-image: url('../img/date.svg');
         background-repeat: no-repeat;
         z-index: 1;
-        left:540px;
+        left: 540px;
         opacity: 0.3;
       }
     .field-date-description{
