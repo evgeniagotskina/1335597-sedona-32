@@ -27,9 +27,7 @@
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         color: #000000;
-        background-color: #ffffff;
-        padding-left: 40px;
-        padding-right: 40px;
+        background-color: #ffffff;        
         width: 1200px;
         min-width: 1200px;
     }
@@ -79,8 +77,8 @@
         grid-template-columns: 1fr 1fr;
         width: 1200px;
         margin: 0 auto;
-        padding-right: 72px;
-        padding-left: 72px;
+        padding-right: 71px;
+        padding-left: 71px;
         box-sizing: border-box;
     }
     
